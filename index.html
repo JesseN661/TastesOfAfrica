@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover African recipes, culinary traditions, and food cultures.">
+    <title>Tastes of Africa | Discover African Cuisine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Tastes of Africa<span>.</span></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="regions.html">Regions</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">A JOURNEY THROUGH AFRICA</p>
+            <h1>Every dish tells a <span>story.</span></h1>
+            <p>Discover the flavors, traditions, and people behind Africa's extraordinary food heritage.</p>
+            <a href="recipes.html" class="btn">Explore Recipes</a>
+        </div>
+    </section>
+
+    <section class="section intro">
+        <p class="eyebrow">WELCOME TO OUR TABLE</p>
+        <h2>A continent of flavors</h2>
+        <p>From fragrant spices to comforting family meals, African cuisine brings together history, creativity, and community.</p>
+
+        <div class="video-container">
+            <iframe
+                src="https://www.youtube-nocookie.com/embed/6q9Z1H5x8Jg"
+                title="Introduction to African food culture"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <section class="section featured" id="featured">
+        <p class="eyebrow">FROM OUR KITCHEN</p>
+        <h2>Discover our favorite dishes</h2>
+        <p>Explore dishes shaped by local ingredients and generations of tradition.</p>
+
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="west-africa">West Africa</button>
+            <button class="filter-btn" data-filter="east-africa">East Africa</button>
+            <button class="filter-btn" data-filter="north-africa">North Africa</button>
+            <button class="filter-btn" data-filter="southern-africa">Southern Africa</button>
+        </div>
+
+        <div class="recipe-grid">
+            <article class="recipe-card" data-region="west-africa">
+                <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=800&q=80" alt="A colorful rice dish">
+                <div class="card-content">
+                    <p class="eyebrow">WEST AFRICA</p>
+                    <h3>Jollof Rice</h3>
+                    <p>A beloved rice dish cooked with tomatoes, peppers, and aromatic spices.</p>
+                    <p>Key ingredient: <mark>tomatoes</mark></p>
+                    <a href="recipes.html#jollof">Discover recipe →</a>
+                    <button class="favorite-btn" data-id="jollof" aria-pressed="false">♡ Favorite</button>
+                </div>
+            </article>
+
+            <article class="recipe-card" data-region="north-africa">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="A bowl of richly seasoned food">
+                <div class="card-content">
+                    <p class="eyebrow">NORTH AFRICA</p>
+                    <h3>Moroccan Tagine</h3>
+                    <p>A slow-cooked dish combining fragrant spices, vegetables, and tender ingredients.</p>
+                    <p>Key ingredient: <mark>cumin</mark></p>
+                    <a href="recipes.html#tagine">Discover recipe →</a>
+                    <button class="favorite-btn" data-id="tagine" aria-pressed="false">♡ Favorite</button>
+                </div>
+            </article>
+
+            <article class="recipe-card" data-region="east-africa">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" alt="A fresh vegetable dish">
+                <div class="card-content">
+                    <p class="eyebrow">EAST AFRICA</p>
+                    <h3>Isombe</h3>
+                    <p>A traditional Rwandan dish made with cassava leaves, often served with a staple food.</p>
+                    <p>Key ingredient: <mark>cassava leaves</mark></p>
+                    <a href="recipes.html#isombe">Discover recipe →</a>
+                    <button class="favorite-btn" data-id="isombe" aria-pressed="false">♡ Favorite</button>
+                </div>
+            </article>
+
+            <article class="recipe-card" data-region="southern-africa">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="A hearty bowl of prepared food">
+                <div class="card-content">
+                    <p class="eyebrow">SOUTHERN AFRICA</p>
+                    <h3>Bunny Chow</h3>
+                    <p>A South African street-food classic featuring curry served inside a loaf of bread.</p>
+                    <p>Key ingredient: <mark>curry spices</mark></p>
+                    <a href="recipes.html#bunny-chow">Discover recipe →</a>
+                    <button class="favorite-btn" data-id="bunny-chow" aria-pressed="false">♡ Favorite</button>
+                </div>
+            </article>
+        </div>
+        <p id="filter-status" class="status-message" aria-live="polite"></p>
+    </section>
+
+    <section class="section regions">
+        <p class="eyebrow">EXPLORE THE CONTINENT</p>
+        <h2>One continent, countless traditions</h2>
+        <div class="region-grid">
+            <a class="region-card" href="regions.html#west-africa">
+                <h3>West Africa</h3>
+                <p>Bold flavors, rice dishes, and rich stews.</p>
+            </a>
+            <a class="region-card" href="regions.html#east-africa">
+                <h3>East Africa</h3>
+                <p>Fresh produce, grains, and comforting staples.</p>
+            </a>
+            <a class="region-card" href="regions.html#north-africa">
+                <h3>North Africa</h3>
+                <p>Fragrant spices and slow-cooked traditions.</p>
+            </a>
+        </div>
+    </section>
+
+    <section class="section trends">
+        <p class="eyebrow">AROUND THE TABLE</p>
+        <h2>Food stories and trends</h2>
+        <div class="trend-grid">
+            <article>
+                <h3>Rediscovering indigenous ingredients</h3>
+                <p>Local grains, leafy vegetables, and traditional crops remain important to African cooking.</p>
+            </article>
+            <article>
+                <h3>Traditional recipes, modern kitchens</h3>
+                <p>Home cooks are finding new ways to share family recipes through digital platforms.</p>
+            </article>
+            <article>
+                <h3>Celebrating African food worldwide</h3>
+                <p>African restaurants and chefs continue to introduce regional flavors to new audiences.</p>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 Tastes of Africa. Celebrating our culinary heritage.</p>
+    <a href="contact.html">Get in touch</a>
+</footer>
+
+</body>
+</html>
