@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | Tastes of Africa</title>
+
+    <meta name="description"
+          content="Contact Tastes of Africa with your questions, recipe suggestions, and feedback.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Tastes of Africa</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="regions.html">Regions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Page Introduction -->
+        <section class="page-banner">
+            <p class="eyebrow">Let's connect</p>
+
+            <h1>We'd Love to Hear From You</h1>
+
+            <p>
+                Have a recipe suggestion, a question about African cuisine,
+                or feedback about our website? Send us a message.
+            </p>
+        </section>
+
+        <!-- Contact Information and Form -->
+        <section class="contact-section">
+
+            <div class="contact-info">
+                <p class="eyebrow">Get in touch</p>
+
+                <h2>Let's Talk Food</h2>
+
+                <p>
+                    Food brings people together, and your ideas can help
+                    make Tastes of Africa even better.
+                </p>
+
+                <div class="contact-info-item">
+                    <span aria-hidden="true">🍲</span>
+                    <div>
+                        <h3>Recipe Suggestions</h3>
+                        <p>Tell us which African dishes you'd like to discover.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <span aria-hidden="true">💬</span>
+                    <div>
+                        <h3>Questions and Feedback</h3>
+                        <p>Share your questions, comments, or ideas with us.</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <span aria-hidden="true">🌍</span>
+                    <div>
+                        <h3>Celebrate African Cuisine</h3>
+                        <p>Help us share the stories behind Africa's diverse food traditions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h2>Send Us a Message</h2>
+
+                <form id="contact-form">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your full name"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Reason for Contacting Us</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Choose a subject</option>
+                            <option value="recipe">Recipe suggestion</option>
+                            <option value="question">Question about a dish</option>
+                            <option value="feedback">Website feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message here..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Submit Message
+                    </button>
+
+                    <p id="form-status" class="form-status"
+                       role="status" aria-live="polite"></p>
+
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Tastes of Africa. Celebrating African food and culture.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="regions.html">Regions</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>

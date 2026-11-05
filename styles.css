@@ -735,3 +735,121 @@ a:focus-visible {
         padding: 1.5rem;
     }
 }
+
+.contact-section {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem 7%;
+    align-items: start;
+}
+
+.contact-info h2,
+.contact-form-wrapper h2 {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    margin: 0.6rem 0 1rem;
+}
+
+.contact-info > p:not(.eyebrow) {
+    color: var(--muted);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 1.8rem 0;
+}
+
+.contact-info-item > span {
+    font-size: 1.8rem;
+}
+
+.contact-info-item h3 {
+    margin: 0 0 0.4rem;
+    font-size: 1.05rem;
+}
+
+.contact-info-item p {
+    margin: 0;
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.contact-form-wrapper {
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #eee3d6;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(50, 30, 15, 0.06);
+}
+
+.contact-form-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border: 1px solid #d9cfc3;
+    border-radius: 8px;
+    background: #fff;
+    color: #30251f;
+    font: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: 2px solid var(--terracotta);
+    outline-offset: 2px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.contact-form-wrapper button {
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+.form-status {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--terracotta);
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 760px) {
+    .contact-section {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 3rem 6%;
+    }
+
+    .contact-form-wrapper {
+        padding: 1.4rem;
+    }
+}
