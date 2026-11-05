@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Explore African recipes, ingredients, cooking instructions, and culinary traditions.">
+
+    <title>African Recipes | Tastes of Africa</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS and JavaScript -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">
+            Tastes of Africa<span>.</span>
+        </a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="regions.html">Regions</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <!-- PAGE INTRODUCTION -->
+    <section class="page-banner">
+        <p class="eyebrow">FROM OUR CONTINENT TO YOUR KITCHEN</p>
+
+        <h1>Explore African Recipes</h1>
+
+        <p>
+            Discover the flavors, stories, ingredients, and cooking
+            traditions behind Africa's extraordinary dishes.
+        </p>
+    </section>
+
+    <!-- RECIPE COLLECTION -->
+    <section class="section" id="all-recipes">
+
+        <p class="eyebrow">YOUR NEXT FAVORITE MEAL</p>
+
+        <h2>Recipes to Discover</h2>
+
+        <p>
+            Explore traditional dishes from different African regions
+            and find inspiration for your next meal.
+        </p>
+
+        <!-- REGION FILTERS -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter-btn" data-filter="west-africa">
+                West Africa
+            </button>
+
+            <button class="filter-btn" data-filter="east-africa">
+                East Africa
+            </button>
+
+            <button class="filter-btn" data-filter="north-africa">
+                North Africa
+            </button>
+
+            <button class="filter-btn" data-filter="southern-africa">
+                Southern Africa
+            </button>
+        </div>
+
+        <p id="filter-status" class="status-message" aria-live="polite"></p>
+
+        <div class="recipe-grid detailed-recipes">
+
+            <!-- RECIPE 1: JOLLOF RICE -->
+            <article class="recipe-card detailed-card"
+                     id="jollof"
+                     data-region="west-africa">
+
+                <img
+                    src="https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=1000&q=80"
+                    alt="A colorful rice dish"
+                    loading="lazy">
+
+                <div class="card-content">
+
+                    <p class="eyebrow">WEST AFRICA · NIGERIA</p>
+
+                    <h3>Jollof Rice</h3>
+
+                    <p>
+                        Jollof rice is a beloved West African dish cooked
+                        in a rich sauce made with <mark>tomatoes</mark>,
+                        peppers, onions, and aromatic spices. It is
+                        commonly enjoyed at family gatherings and
+                        celebrations.
+                    </p>
+
+                    <button class="favorite-btn"
+                            data-id="jollof"
+                            aria-pressed="false">
+                        ♡ Favorite
+                    </button>
+
+                    <h4>Ingredients</h4>
+
+                    <ul class="ingredient-list">
+                        <li>2 cups of long-grain rice</li>
+                        <li>4 tomatoes, blended</li>
+                        <li>1 red bell pepper</li>
+                        <li>1 onion, chopped</li>
+                        <li>2 tablespoons of tomato paste</li>
+                        <li>Cooking oil</li>
+                        <li>Salt and spices to taste</li>
+                        <li>Stock or water</li>
+                    </ul>
+
+                    <details>
+                        <summary>View cooking instructions</summary>
+
+                        <ol>
+                            <li>
+                                Blend the tomatoes and red bell pepper
+                                until smooth.
+                            </li>
+                            <li>
+                                Heat oil in a pot and fry the onion
+                                and tomato paste.
+                            </li>
+                            <li>
+                                Add the blended mixture and cook until
+                                the sauce thickens.
+                            </li>
+                            <li>
+                                Season the sauce and add stock or water.
+                            </li>
+                            <li>
+                                Add the washed rice and stir gently.
+                            </li>
+                            <li>
+                                Cover and cook on low heat until the
+                                rice is tender, adding a little liquid
+                                if necessary.
+                            </li>
+                        </ol>
+                    </details>
+
+                    <h4>Cooking Tutorial</h4>
+
+                    <p>
+                        <div class="video-container">
+                            <iframe
+                                src="https://www.youtube.com/embed/jDbUg4f9EFw&t=240s"
+                                title="How to make Jollof Rice"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </p>
+
+                    <h4>Country of Origin</h4>
+
+                    <iframe
+                        class="recipe-map"
+                        src="https://maps.google.com/maps?q=Nigeria&output=embed"
+                        title="Map of Nigeria"
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+            </article>
+
+
+            <!-- RECIPE 2: MOROCCAN TAGINE -->
+            <article class="recipe-card detailed-card"
+                     id="tagine"
+                     data-region="north-africa">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80"
+                    alt="A bowl of richly seasoned food"
+                    loading="lazy">
+
+                <div class="card-content">
+
+                    <p class="eyebrow">NORTH AFRICA · MOROCCO</p>
+
+                    <h3>Moroccan Tagine</h3>
+
+                    <p>
+                        Moroccan tagine is known for its slow-cooked
+                        flavors and fragrant <mark>spices</mark>.
+                        It often combines vegetables with chicken,
+                        lamb, or legumes to create a comforting meal.
+                    </p>
+
+                    <button class="favorite-btn"
+                            data-id="tagine"
+                            aria-pressed="false">
+                        ♡ Favorite
+                    </button>
+
+                    <h4>Ingredients</h4>
+
+                    <ul class="ingredient-list">
+                        <li>500 g of chicken or cooked chickpeas</li>
+                        <li>2 onions, sliced</li>
+                        <li>2 carrots, chopped</li>
+                        <li>2 tomatoes, chopped</li>
+                        <li>2 cloves of garlic</li>
+                        <li>Cumin</li>
+                        <li>Ground ginger and turmeric</li>
+                        <li>A pinch of cinnamon</li>
+                        <li>Olive oil, salt, and stock or water</li>
+                    </ul>
+
+                    <details>
+                        <summary>View cooking instructions</summary>
+
+                        <ol>
+                            <li>
+                                Heat olive oil in a heavy pot.
+                            </li>
+                            <li>
+                                Add the onions and garlic and cook
+                                until softened.
+                            </li>
+                            <li>
+                                Add the chicken or chickpeas,
+                                vegetables, and spices.
+                            </li>
+                            <li>
+                                Pour in a little stock or water.
+                            </li>
+                            <li>
+                                Cover and simmer gently until the
+                                ingredients are tender and the flavors
+                                have combined.
+                            </li>
+                            <li>
+                                Serve warm with bread or couscous.
+                            </li>
+                        </ol>
+                    </details>
+
+                    <h4>Cooking Tutorial</h4>
+
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/YJLitxHXOOE"
+                            title="How to make Moroccan Tagine"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <h4>Country of Origin</h4>
+
+                    <iframe
+                        class="recipe-map"
+                        src="https://maps.google.com/maps?q=Morocco&output=embed"
+                        title="Map of Morocco"
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+            </article>
+
+
+            <!-- RECIPE 3: ISOMBE -->
+            <article class="recipe-card detailed-card"
+                     id="isombe"
+                     data-region="east-africa">
+
+                <img
+                    src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=80"
+                    alt="A fresh vegetable dish"
+                    loading="lazy">
+
+                <div class="card-content">
+
+                    <p class="eyebrow">EAST AFRICA · RWANDA</p>
+
+                    <h3>Isombe</h3>
+
+                    <p>
+                        Isombe is a traditional Rwandan dish prepared
+                        with <mark>cassava leaves</mark>. The leaves
+                        are cooked thoroughly and may be combined with
+                        groundnuts, onions, and other ingredients to
+                        create a flavorful meal.
+                    </p>
+
+                    <button class="favorite-btn"
+                            data-id="isombe"
+                            aria-pressed="false">
+                        ♡ Favorite
+                    </button>
+
+                    <h4>Ingredients</h4>
+
+                    <ul class="ingredient-list">
+                        <li>500 g of prepared cassava leaves</li>
+                        <li>1 onion, chopped</li>
+                        <li>2 cloves of garlic</li>
+                        <li>Groundnut paste, if desired</li>
+                        <li>Cooking oil</li>
+                        <li>Salt to taste</li>
+                        <li>Water as needed</li>
+                    </ul>
+
+                    <details>
+                        <summary>View cooking instructions</summary>
+
+                        <ol>
+                            <li>
+                                Use cassava leaves that have been
+                                properly prepared for cooking.
+                            </li>
+                            <li>
+                                Cook the leaves thoroughly in water
+                                until tender.
+                            </li>
+                            <li>
+                                Add the chopped onion, garlic,
+                                and a little cooking oil.
+                            </li>
+                            <li>
+                                Stir in groundnut paste if desired
+                                and add water as needed.
+                            </li>
+                            <li>
+                                Continue cooking until the ingredients
+                                are well combined and fully cooked.
+                            </li>
+                            <li>
+                                Serve with ugali, rice, or another
+                                preferred accompaniment.
+                            </li>
+                        </ol>
+                    </details>
+
+                    <h4>Cooking Tutorial</h4>
+
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/eFt-j42yaRY"
+                            title="How to make Isombe"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <h4>Country of Origin</h4>
+
+                    <iframe
+                        class="recipe-map"
+                        src="https://maps.google.com/maps?q=Rwanda&output=embed"
+                        title="Map of Rwanda"
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+            </article>
+
+
+            <!-- RECIPE 4: BUNNY CHOW -->
+            <article class="recipe-card detailed-card"
+                     id="bunny-chow"
+                     data-region="southern-africa">
+
+                <img
+                    src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=80"
+                    alt="A hearty bowl of prepared food"
+                    loading="lazy">
+
+                <div class="card-content">
+
+                    <p class="eyebrow">SOUTHERN AFRICA · SOUTH AFRICA</p>
+
+                    <h3>Bunny Chow</h3>
+
+                    <p>
+                        Bunny chow is a famous South African street-food
+                        dish associated with Durban. It features a
+                        flavorful curry seasoned with <mark>aromatic
+                        spices</mark> and served inside a hollowed-out
+                        loaf of bread.
+                    </p>
+
+                    <button class="favorite-btn"
+                            data-id="bunny-chow"
+                            aria-pressed="false">
+                        ♡ Favorite
+                    </button>
+
+                    <h4>Ingredients</h4>
+
+                    <ul class="ingredient-list">
+                        <li>1 small loaf of white bread</li>
+                        <li>500 g of chicken, beans, or potatoes</li>
+                        <li>1 onion, chopped</li>
+                        <li>2 tomatoes, chopped</li>
+                        <li>Garlic and ginger</li>
+                        <li>Curry powder</li>
+                        <li>Cooking oil and salt</li>
+                        <li>Water or stock</li>
+                    </ul>
+
+                    <details>
+                        <summary>View cooking instructions</summary>
+
+                        <ol>
+                            <li>
+                                Heat oil in a pot and fry the onion,
+                                garlic, and ginger.
+                            </li>
+                            <li>
+                                Add the curry powder and stir briefly.
+                            </li>
+                            <li>
+                                Add the chicken, beans, or potatoes
+                                and the chopped tomatoes.
+                            </li>
+                            <li>
+                                Pour in a little water or stock and
+                                simmer until everything is cooked.
+                            </li>
+                            <li>
+                                Cut the loaf into portions and
+                                hollow out the center.
+                            </li>
+                            <li>
+                                Fill the bread with the curry
+                                and serve warm.
+                            </li>
+                        </ol>
+                    </details>
+
+                    <h4>Cooking Tutorial</h4>
+
+                    <div class="video-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/nyaWt4Vo3L4"
+                            title="How to make Bunny Chow"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+
+                    <h4>Country of Origin</h4>
+
+                    <iframe
+                        class="recipe-map"
+                        src="https://maps.google.com/maps?q=Durban%2C+South+Africa&output=embed"
+                        title="Map of Durban, South Africa"
+                        loading="lazy">
+                    </iframe>
+
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+    <p>
+        © 2026 Tastes of Africa. Celebrating our culinary heritage.
+    </p>
+
+    <a href="contact.html">Get in touch</a>
+</footer>
+
+</body>
+</html>

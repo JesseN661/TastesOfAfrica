@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // RECIPE FILTER
     const filterButtons = document.querySelectorAll(".filter-btn");
     const recipeCards = document.querySelectorAll(".recipe-card");
     const filterStatus = document.querySelector("#filter-status");
@@ -34,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // FAVORITES USING LOCAL STORAGE
     let favorites = [];
 
     try {
