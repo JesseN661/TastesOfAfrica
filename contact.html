@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Get in touch with Tastes of Africa to share recipes, ask questions, or collaborate.">
+
+    <title>Contact Us | Tastes of Africa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Tastes of Africa</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="regions.html">Regions</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="page-banner">
+            <p class="eyebrow">We would love to hear from you</p>
+
+            <h1>Contact Tastes of Africa</h1>
+
+            <p>
+                Share a favorite recipe, ask a question, or tell us how
+                African food has inspired you.
+            </p>
+        </section>
+
+        <section class="section">
+            <div class="contact-grid">
+
+                <div class="contact-card">
+                    <h2>Get in touch</h2>
+
+                    <p>
+                        Whether you are a home cook, a food writer, or simply
+                        curious about African cuisine, you are welcome at our
+                        table.
+                    </p>
+
+                    <ul class="contact-details">
+                        <li>
+                            <strong>Email:</strong>
+                            <a href="mailto:kgl@tastesofafrica.rw">kgl@tastesofafrica.rw</a>
+                        </li>
+                        <li>
+                            <strong>Recipes:</strong>
+                            <a href="recipes.html">Browse the recipe collection</a>
+                        </li>
+                        <li>
+                            <strong>Regions:</strong>
+                            <a href="regions.html">Explore regional food cultures</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="contact-card">
+                    <h2>Send a message</h2>
+
+                    <form class="contact-form"
+                          action="mailto:kgl@tastesofafrica.rw"
+                          method="post"
+                          enctype="text/plain">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required>
+
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required>
+
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+
+                        <button type="submit" class="btn">Send message</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Tastes of Africa. Celebrating African food and culture.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="regions.html">Regions</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>
