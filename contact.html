@@ -3,28 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Get in touch with Tastes of Africa to share recipes, ask questions, or collaborate.">
-
+    <meta name="description" content="Contact Tastes of Africa with your questions, recipe suggestions, and feedback.">
     <title>Contact Us | Tastes of Africa</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
-          rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
-
 <body>
-
     <header class="site-header">
         <nav class="navbar">
-            <a href="index.html" class="logo">Tastes of Africa</a>
-
+            <a href="index.html" class="logo">Tastes of Africa<span>.</span></a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="recipes.html">Recipes</a></li>
@@ -36,74 +26,116 @@
     </header>
 
     <main>
-
         <section class="page-banner">
-            <p class="eyebrow">We would love to hear from you</p>
-
-            <h1>Contact Tastes of Africa</h1>
-
-            <p>
-                Share a favorite recipe, ask a question, or tell us how
-                African food has inspired you.
-            </p>
+            <p class="eyebrow">Let's connect</p>
+            <h1>We'd Love to Hear From You</h1>
+            <p>Have a recipe suggestion, a question about African cuisine, or feedback about our website? Send us a message.</p>
         </section>
 
-        <section class="section">
-            <div class="contact-grid">
+        <section class="contact-section">
+            <div class="contact-info">
+                <p class="eyebrow">Get in touch</p>
+                <h2>Let's Talk Food</h2>
+                <p>Food brings people together, and your ideas can help make Tastes of Africa even better.</p>
 
-                <div class="contact-card">
-                    <h2>Get in touch</h2>
-
-                    <p>
-                        Whether you are a home cook, a food writer, or simply
-                        curious about African cuisine, you are welcome at our
-                        table.
-                    </p>
-
-                    <ul class="contact-details">
-                        <li>
-                            <strong>Email:</strong>
-                            <a href="mailto:kgl@tastesofafrica.rw">kgl@tastesofafrica.rw</a>
-                        </li>
-                        <li>
-                            <strong>Recipes:</strong>
-                            <a href="recipes.html">Browse the recipe collection</a>
-                        </li>
-                        <li>
-                            <strong>Regions:</strong>
-                            <a href="regions.html">Explore regional food cultures</a>
-                        </li>
-                    </ul>
+                <div class="contact-info-item">
+                    <span aria-hidden="true">🍲</span>
+                    <div>
+                        <h3>Recipe Suggestions</h3>
+                        <p>Tell us which African dishes you'd like to discover.</p>
+                    </div>
                 </div>
 
-                <div class="contact-card">
-                    <h2>Send a message</h2>
-
-                    <form class="contact-form"
-                          action="mailto:kgl@tastesofafrica.rw"
-                          method="post"
-                          enctype="text/plain">
-                        <label for="name">Name</label>
-                        <input id="name" name="name" type="text" autocomplete="name" required>
-
-                        <label for="email">Email</label>
-                        <input id="email" name="email" type="email" autocomplete="email" required>
-
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-
-                        <button type="submit" class="btn">Send message</button>
-                    </form>
+                <div class="contact-info-item">
+                    <span aria-hidden="true">💬</span>
+                    <div>
+                        <h3>Questions and Feedback</h3>
+                        <p>Share your questions, comments, or ideas with us.</p>
+                    </div>
                 </div>
 
+                <div class="contact-info-item">
+                    <span aria-hidden="true">🌍</span>
+                    <div>
+                        <h3>Celebrate African Cuisine</h3>
+                        <p>Help us share the stories behind Africa's diverse food traditions.</p>
+                    </div>
+                </div>
+
+                <p><strong>Email:</strong> <a href="mailto:kgl@tastesofafrica.rw">kgl@tastesofafrica.rw</a></p>
+                <p><strong>Recipes:</strong> <a href="recipes.html">Browse the recipe collection</a></p>
+                <p><strong>Regions:</strong> <a href="regions.html">Explore regional food cultures</a></p>
+            </div>
+
+            <div class="contact-form-wrapper">
+                <h2>Send Us a Message</h2>
+
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" autocomplete="name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="">Choose your country</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="country-suggestion">Other country (optional)</label>
+                        <input type="text" id="country-suggestion" name="country-suggestion" list="country-list" placeholder="Start typing a country">
+                        <datalist id="country-list">
+                            <option value="Algeria"></option>
+                            <option value="Cameroon"></option>
+                            <option value="Ethiopia"></option>
+                            <option value="Senegal"></option>
+                            <option value="Tanzania"></option>
+                            <option value="Uganda"></option>
+                            <option value="Zambia"></option>
+                            <option value="Zimbabwe"></option>
+                        </datalist>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Reason for Contacting Us</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Choose a subject</option>
+                            <option value="recipe">Recipe suggestion</option>
+                            <option value="question">Question about a dish</option>
+                            <option value="feedback">Website feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="6" minlength="21" placeholder="Write a message of at least 21 characters..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit Message</button>
+                    <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+                </form>
             </div>
         </section>
-
     </main>
 
     <footer class="site-footer">
         <p>&copy; 2026 Tastes of Africa. Celebrating African food and culture.</p>
-
         <div class="footer-links">
             <a href="index.html">Home</a>
             <a href="recipes.html">Recipes</a>
@@ -112,6 +144,5 @@
             <a href="contact.html">Contact</a>
         </div>
     </footer>
-
 </body>
 </html>
